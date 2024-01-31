@@ -21,7 +21,7 @@ public class Employee {
 	String address;
 	long contact;
 	
-	@ManyToOne(targetEntity = Department.class, cascade = {CascadeType.PERSIST})
+	@ManyToOne(targetEntity = Department.class, cascade = {CascadeType.ALL})
 	Department dept;
 	public long getEmpId() {
 		return empId;
